@@ -1,1 +1,1 @@
-node --openssl-legacy-provider ./node_modules/.bin/gatsby build
+export NODE_OPTIONS=--openssl-legacy-provider;
