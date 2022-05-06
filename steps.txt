@@ -1,0 +1,14 @@
+1- clone repo
+2- move to api folder
+3- npm install 
+4- run api locally
+-----------
+5- move to front end folder
+6- npm install
+7- check environment file and find how fronend call api 
+8- the api url will be diffrent while production as the api will be on elasti beanstalk
+9- npm run start
+now project is running locally
+
+1- install RDS on aws consol
+2- 
