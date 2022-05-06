@@ -1,0 +1,1 @@
+node --openssl-legacy-provider ./node_modules/.bin/gatsby build
