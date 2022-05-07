@@ -29,10 +29,11 @@ jobs:
           command: |
             npm run backend:build
       - run:
-          name: Forntend App
+          name: Forntend Deploy
           command: |
             npm run frontend:deploy
+      - aws-elastic-beanstalk/setup
       - run:
-          name: Backend App
+          name: Backend Deploy
           command: |
             npm run backend:deploy
