@@ -9,10 +9,14 @@
 
 - A RDS database running Postgres.
 
-- A S3 bucket for hosting uploaded pictures.
+- A S3 bucket for hosting frontend.
 
 - An Elastic beanstalk environment for api deployment.
 
 - CircleCI for continuous integration.
+
+- Bcryptjs for password hashing.
+
+- Jsonwebtoken for authentication.
 
 ```
