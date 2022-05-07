@@ -48,8 +48,3 @@ jobs:
           name: Frontend Test
           command: |
             npm run frontend:test
-#run backend tests
-      - run:
-          name: Backend Test
-          command: |
-            npm run backend:test
