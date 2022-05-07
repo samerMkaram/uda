@@ -85,7 +85,7 @@ There are no Unit test on the back-end
 
 ### Unit Tests:
 
-Unit tests are using the Jasmine Framework.
+Unit tests are using the Jasmine Framework..
 
 ### End to End Tests:
 
