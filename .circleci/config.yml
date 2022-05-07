@@ -12,28 +12,44 @@ jobs:
       - node/install-yarn
       - checkout
       - aws-cli/setup
+#install frontend dependencies
       - run:
           name: Install Front-End
           command: |
             npm run frontend:install
+#install backend dependencies
       - run:
           name: Install Back-End
           command: |
             npm run backend:install
+#build application frontend , run build script
       - run:
           name: Build Front-End
           command: |
             npm run frontend:build
+#build application backend , run build script
       - run:
           name: Build Back-End
           command: |
             npm run backend:build
+#deploy frontend to AWS S3 bucket
       - run:
           name: Forntend Deploy
           command: |
             npm run frontend:deploy
       - aws-elastic-beanstalk/setup
+#deploy backend to AWS Elastic Beanstalk
       - run:
           name: Backend Deploy
           command: |
             npm run backend:deploy
+#run frontend tests
+      - run:
+          name: Frontend Test
+          command: |
+            npm run frontend:test
+#run backend tests
+      - run:
+          name: Backend Test
+          command: |
+            npm run backend:test
